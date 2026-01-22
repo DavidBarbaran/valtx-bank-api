@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
         name: "Cuenta soles",
         cardBrand: "VISA",
         currency: "PEN",
-        amount: 1200.80,
+        amount: 1500.80,
         accountNumber: "898 3492915083"
       },
       {
@@ -37,7 +37,7 @@ router.get("/", (req, res) => {
         accountNumber: "545 4012915467"
       }
     ]);
-  }, 3000);
+  }, 2000);
 });
 
 
