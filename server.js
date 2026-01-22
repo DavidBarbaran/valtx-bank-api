@@ -7,7 +7,7 @@ app.use(express.json());
 // Rutas
 app.use("/auth/users/login/anonymous", require("./routes/login"));
 app.use("/accounts", require("./routes/accounts"));
-app.use("/movements", require("./routes/movements"));
+app.use("/details", require("./routes/details"));
 
 // En caso de error por falta de alguna información 
 app.use((err, req, res, next) => {
