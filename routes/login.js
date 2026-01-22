@@ -12,10 +12,10 @@ router.post("/", (req, res) => {
     }
     });-*/
 
-  if (user.usr_code === "usr_XYZ") {
+  if (user.usr_code == "75664393") {
     return res.json({
       data: {
-        accessToken: "fakeAccessToken123",
+        accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkRhdmlkIERlIGxhIFZlZ2EgQmFyYmFyYW4iLCJyb2xlIjoiVVNFUiIsImV4cCI6MTczNzA1OTIwMH0.kQp8T6k7N0sFZ8Zx1r8pXnQpLkZyR1M2CwQJ9YF2aKs",
         expiresIn: new Date(Date.now() + 2 * 60 * 1000).toISOString(),
         tokenType: "Bearer",
         user: {
@@ -25,17 +25,19 @@ router.post("/", (req, res) => {
         }
       }
     });
+  } else {
+    return res.status(401).json({
+        error: {
+          code: 401,
+          userMessage: {
+            es: "Usuario y/o contraseña incorrectos"
+          }
+        }
+      });
   }
 
   // Usuario/contraseña incorrectos
-  return res.status(401).json({
-    error: {
-      code: 401,
-      userMessage: {
-        es: "Usuario y/o contraseña incorrectos"
-      }
-    }
-  });
+  
 });
 
 module.exports = router;
