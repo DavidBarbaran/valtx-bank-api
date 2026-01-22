@@ -30,7 +30,8 @@ router.post("/", (req, res) => {
         error: {
           code: 401,
           userMessage: {
-            es: "Usuario y/o contraseña incorrectos"
+            es: "Usuario y/o contraseña incorrectos",
+            ja: "アプリケーションのバージョンがプラットフォームに存在しない"
           }
         }
       });
