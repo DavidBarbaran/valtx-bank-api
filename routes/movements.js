@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.json([
+  setTimeout(() => {
+
+ res.json([
     {
       id: 1,
       description: "PLIN",
@@ -144,6 +146,8 @@ router.get("/", (req, res) => {
       amount: -129.90
     }
   ]);
+
+  }, 2000);
 });
 
 module.exports = router;
