@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
         name: "Cuenta soles",
         cardBrand: "VISA",
         currency: "PEN",
-        amount: 1000.80,
+        amount: 1200.80,
         accountNumber: "898 3492915083"
       },
       {
