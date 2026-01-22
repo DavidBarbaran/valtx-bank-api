@@ -10,7 +10,6 @@ router.get("/", (req, res) => {
         cardBrand: "VISA",
         currency: "PEN",
         amount: 1500.80,
-        accountNumber: "898 3492915083"
       },
       {
         id: 2,
@@ -18,7 +17,6 @@ router.get("/", (req, res) => {
         cardBrand: "MASTERCARD",
         currency: "PEN",
         amount: 2000.50,
-        accountNumber: "898 3492915083"
       },
       {
         id: 3,
@@ -26,7 +24,6 @@ router.get("/", (req, res) => {
         cardBrand: "VISA",
         currency: "USD",
         amount: 1800.10,
-        accountNumber: "545 4012915467"
       },
       {
         id: 4,
@@ -34,7 +31,6 @@ router.get("/", (req, res) => {
         cardBrand: "VISA",
         currency: "USD",
         amount: 0.00,
-        accountNumber: "545 4012915467"
       }
     ]);
   }, 2000);
